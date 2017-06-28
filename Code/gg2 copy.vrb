@@ -1,0 +1,62 @@
+\frametitle{Alternating Direction Solver -- 2D}
+
+{Two steps} -- solving systems with $\Mat{A}$ and $\Mat{B}$ in different \emph{directions}
+\begin{equation*}
+  \begin{bmatrix}
+    A_{11} & A_{12} & \cdots & 0 \\
+    A_{21} & A_{22} & \cdots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \cdots & A_{nn} \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    y_{11} & y_{21} & \cdots & y_{m1}
+    \\
+    y_{12} & y_{22} & \cdots & y_{m1}
+    \\
+    \vdots & \vdots & \ddots & \vdots \\
+    y_{1n} & y_{2n} & \cdots & y_{mn}
+    \\
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    b_{11} & b_{21} & \cdots & b_{m1} \\
+    b_{12} & b_{22} & \cdots & b_{m2} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    b_{1n} & b_{2n} & \cdots & b_{mn} \\
+  \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+  \begin{bmatrix}
+    B_{11} & B_{12} & \cdots & 0 \\
+    B_{21} & B_{22} & \cdots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \cdots & B_{mm} \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    x_{11} & \cdots & x_{1n} \\
+    x_{21} & \cdots & x_{2n} \\
+    \vdots & \ddots & \vdots \\
+    x_{m1} & \cdots & x_{mn} \\
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    y_{11} &
+    y_{12} & \cdots &
+    y_{1n} \\
+    y_{21} & y_{22} & \cdots & y_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    y_{m1} &
+    y_{m2} & \cdots &
+    y_{mn} \\
+  \end{bmatrix}
+\end{equation*}
+
+%$\Mat{A}$, $\Mat{B}$ -- multidiagonal matrices for one-dimensional bases \\
+Two one dimensional problems with multiple RHS:
+\begin{itemize}
+\item $ n \times n $ with $m$ right hand sides $\rightarrow$ $O(n*m)=O(N)$
+\item $ m \times m $ with $n$ right hand sides $\rightarrow$ $O(m*n)=O(N)$
+\end{itemize}
+\vspace{2mm}
+Linear computational cost $O(N)$ as opposed to $O(N^{1.5})$ or $O(N^{2})$
+
