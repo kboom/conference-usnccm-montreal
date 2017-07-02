@@ -495,14 +495,14 @@ The following measures have been used:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Implementation - performance}
+\begin{frame}{Implementation - time complexity - O(N)}
 
 \begin{figure}
       \centering
-      \includegraphics[width=0.9\textwidth]{img/upScalability.png}
+      \includegraphics[width=1\textwidth]{img/TimeVsProblemSizeFixedNodes.png}
     \end{figure}
     
-    {\tiny * Run on a cluster of 6 machines - Westmere E56xx/L56xx/X56xx (Nehalem-C 2.7GHz) 4 CPU / 8GB RAM each}
+    {\tiny * Run on a cluster of 11 machines - Westmere (Nehalem-C 2.7GHz) CPU with 4 cores / 8GB RAM each}
 
 \end{frame}
 
@@ -510,12 +510,25 @@ The following measures have been used:
 
 \begin{frame}{Implementation - scaling out}
 
-\begin{figure}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+  \begin{figure}
       \centering
-      \includegraphics[width=0.9\textwidth]{img/outScalability.png}
+      \includegraphics[width=1\textwidth]{img/TotalTimeVsNodeCount_SMALL.png}
+      \caption{\tiny Small problems ($2m$ elem.)}
     \end{figure}
+  \end{column}
+
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1\textwidth]{img/TotalTimeVsNodeCount_BIG.png}
+      \caption{\tiny Larger problems ($2m$ to $150m$ elem.)}
+    \end{figure}
+  \end{column}
+\end{columns}
     
-    {\tiny * Run on the same cluster for an exemplary problem of heat transfer using 36 million elements. }
+    {\tiny * Each node has Westmere (Nehalem-C 2.7GHz) CPU with 4 cores / 8GB RAM each}
 
 \end{frame}
 
@@ -525,7 +538,7 @@ The following measures have been used:
 
 \begin{itemize}
   \item Distributed memory implementation is slower than shared memory one for small problem sizes which fit into physical memory of a single machine
-  \item It can solve any problem by adding additional nodes (4 - 6144, 6 - 12288, 10 - 24576)
+  \item It can solve any problem by adding additional nodes (4 - 6144, 6 - 12288, 12 - 24576)
   \item Given there is a shared memory machine with sufficient physical memory, IMDG implementation outperforms it starting from a certain problem size
   \item This implementation can be made significantly faster by pushing some logic into worker nodes
 \end{itemize}
