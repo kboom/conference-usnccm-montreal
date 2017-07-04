@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUL 2017 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JUL 2017 19:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1650,14 +1650,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 176.
-
-Overfull \vbox (5.68158pt too high) detected at line 176
- []
-
-[4
-
-]
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 214
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 176
 .
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1666,31 +1659,30 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 214.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 176.
 
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 214
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 176
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 214
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 176
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 214.
+(Font)              <10.95> on input line 176.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 214.
+(Font)              <8> on input line 176.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 214.
-LaTeX Font Info:    Try loading font information for U+msa on input line 214.
+(Font)              <6> on input line 176.
+LaTeX Font Info:    Try loading font information for U+msa on input line 176.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1698,7 +1690,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 214.
+LaTeX Font Info:    Try loading font information for U+msb on input line 176.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1707,9 +1699,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 176.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 176.
+ [4
+
+]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1720,15 +1715,16 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
- [5
 
-]
-<img/2DFEM.png, id=62, 916.1728pt x 419.31656pt>
+[5
+
+] <img/2DFEM.png, id=62, 916.1728pt x 419.31656pt>
 File: img/2DFEM.png Graphic file (type png)
  <use img/2DFEM.png>
 Package pdftex.def Info: img/2DFEM.png used on input line 243.
 (pdftex.def)             Requested size: 245.83282pt x 112.51317pt.
- [6
+
+[6
 
  <./img/2DFEM.png>]
 Overfull \vbox (1.92973pt too high) detected at line 277
@@ -1871,11 +1867,11 @@ Package rerunfilecheck Info: File `montreal.out' has not changed.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31134 strings out of 492995
- 603648 string characters out of 6132704
+ 31138 strings out of 492995
+ 603698 string characters out of 6132704
  732865 words of memory out of 5000000
  34020 multiletter control sequences out of 15000+600000
- 616341 words of font info for 101 fonts, out of 8000000 for 9000
+ 616578 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,11n,57p,10349b,8268s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathi
@@ -1896,7 +1892,7 @@ o8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on montreal.pdf (19 pages, 837244 bytes).
+Output written on montreal.pdf (19 pages, 837224 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams
