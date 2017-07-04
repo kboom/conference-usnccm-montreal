@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JUL 2017 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JUL 2017 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1816,28 +1816,37 @@ Package pdftex.def Info: img/TimeVsProblemSizeFixedNodes.png used on input line
 (pdftex.def)             Requested size: 307.28987pt x 187.19196pt.
  [16
 
- <./img/TimeVsProblemSizeFixedNodes.png (PNG copy)>]
-<img/TotalTimeVsNodeCount_SMALL.png, id=135, 1003.75pt x 1003.75pt>
+ <./img/TimeVsProblemSizeFixedNodes.png (PNG copy)>] <img/speedup2.png, id=135,
+ 1772.6225pt x 1152.305pt>
+File: img/speedup2.png Graphic file (type png)
+
+<use img/speedup2.png>
+Package pdftex.def Info: img/speedup2.png used on input line 520.
+(pdftex.def)             Requested size: 307.28987pt x 199.75746pt.
+ [17
+
+ <./img/speedup2.png (PNG copy)>]
+<img/TotalTimeVsNodeCount_SMALL.png, id=141, 1003.75pt x 1003.75pt>
 File: img/TotalTimeVsNodeCount_SMALL.png Graphic file (type png)
 
 <use img/TotalTimeVsNodeCount_SMALL.png>
 Package pdftex.def Info: img/TotalTimeVsNodeCount_SMALL.png used on input line 
-533.
+546.
 (pdftex.def)             Requested size: 153.64493pt x 153.6345pt.
 
-<img/TotalTimeVsNodeCount_BIG.png, id=136, 1003.75pt x 1003.75pt>
+<img/TotalTimeVsNodeCount_BIG.png, id=142, 1003.75pt x 1003.75pt>
 File: img/TotalTimeVsNodeCount_BIG.png Graphic file (type png)
 
 <use img/TotalTimeVsNodeCount_BIG.png>
-Package pdftex.def Info: img/TotalTimeVsNodeCount_BIG.png used on input line 53
-3.
+Package pdftex.def Info: img/TotalTimeVsNodeCount_BIG.png used on input line 54
+6.
 (pdftex.def)             Requested size: 153.64493pt x 153.6345pt.
- [17
+ [18
 
  <./img/TotalTimeVsNodeCount_SMALL.png (PNG copy)> <./img/TotalTimeVsNodeCount_
-BIG.png (PNG copy)>] [18
+BIG.png (PNG copy)>] [19
 
-] [19
+] [20
 
 ]
 \tf@nav=\write6
@@ -1854,11 +1863,11 @@ BIG.png (PNG copy)>] [18
 Package caption Warning: Unused \captionsetup[sub] on input line 34.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
 (./montreal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 559.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 559.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 572.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
 Package rerunfilecheck Info: File `montreal.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  )
@@ -1867,13 +1876,13 @@ Package rerunfilecheck Info: File `montreal.out' has not changed.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31138 strings out of 492995
- 603698 string characters out of 6132704
+ 31147 strings out of 492995
+ 603828 string characters out of 6132704
  732865 words of memory out of 5000000
- 34020 multiletter control sequences out of 15000+600000
+ 34026 multiletter control sequences out of 15000+600000
  616578 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,11n,57p,10349b,8268s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,57p,10349b,8278s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathi
 t.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/us
 r/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texliv
@@ -1892,10 +1901,10 @@ o8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on montreal.pdf (19 pages, 837224 bytes).
+Output written on montreal.pdf (20 pages, 896022 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 23164 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 226 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 23169 words of extra memory for PDF output out of 24883 (max. 10000000)
 
