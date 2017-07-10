@@ -406,7 +406,7 @@ The backing data structure is a tree. Each of its nodes holds coefficients of a 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Algorithm - set of operations}
+\begin{frame}{Algorithm - productions}
 
 We can identify a set of basic tasks applicable on any vertex. We call them \textbf{productions}. They can:
 \begin{itemize}
@@ -428,37 +428,6 @@ To obtain a solution for a 1-dimensional problem with 12 elements it is enough t
       \centering
       \includegraphics[width=1\textwidth]{img/task_tree}
     \end{figure}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Implementation}
-
-CUDA (GPU):
-\begin{itemize}
-  \item extremely fast for problems which \emph{fit in on-board memory}
-  \item verbose and fragile
-  \item hardware dependent
-\end{itemize}
-
-\vskip 0.1in
-
-Shared memory (Multicore CPU)
-\begin{itemize}
-  \item fast for problems which fit in RAM ($37$ million elements require 16GB of RAM)
-  \item portable, easy to understand and adapt
-  \item scales up only
-\end{itemize}
-
-\vskip 0.1in
-
-In memory grid (Cloud)
-\begin{itemize}
-  \item can solve problems of any size
-  \item slower for relatively small problems
-  \item \emph{scales out}
-\end{itemize}
 
 \end{frame}
 
@@ -489,6 +458,28 @@ The following measures have been used:
    \begin{figure}
       \centering
       \includegraphics[width=0.9\textwidth]{img/graph-idea.png}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Implementation - partition tree performance}
+
+   \begin{figure}
+      \centering
+      \includegraphics[width=1\textwidth]{img/regionHeightBig.png}
+    \end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Implementation - extracting solution columns}
+
+   \begin{figure}
+      \centering
+      \includegraphics[width=1\textwidth]{img/mapreduce.png}
     \end{figure}
 
 \end{frame}
@@ -549,14 +540,34 @@ The following measures have been used:
 
 \begin{frame}{Conclusions}
 
+CUDA (GPU):
 \begin{itemize}
-  \item Distributed memory implementation is slower than shared memory one for small problem sizes which fit into physical memory of a single machine
-  \item It can solve any problem by adding additional nodes (4 - 6144, 6 - 12288, 12 - 24576)
-  \item Given there is a shared memory machine with sufficient physical memory, IMDG implementation outperforms it starting from a certain problem size
-  \item This implementation can be made significantly faster by pushing some logic into worker nodes
+  \item best for small problems with thousands of time steps
+  \item error-prone, verbose and fragile
+  \item bound to specific hardware
+  \item does not scale
+\end{itemize}
+
+\vskip 0.1in
+
+Shared memory (Multicore CPU)
+\begin{itemize}
+  \item best for problems of medium size
+  \item flexible, reliable and easy to understand
+  \item scales up only
+\end{itemize}
+
+\vskip 0.1in
+
+\textbf{In memory grid (Cluster)}
+\begin{itemize}
+  \item the only choice for big problems
+  \item alternative to high-end hardware
+  \item \emph{scales out}
 \end{itemize}
 
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Thank you!}
